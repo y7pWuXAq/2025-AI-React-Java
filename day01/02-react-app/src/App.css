@@ -1,0 +1,33 @@
+/* body 태그 전체에 적용할 배경색 지정
+  - 배경색 : dimgray
+  - 폰트 스타일 : Arial, sans-serif
+*/
+body {
+  background-color: ghostwhite;
+  font-family: '나눔스퀘어라운드', sans-serif;
+}
+
+/* 클래스 속성이 container인 태그에 대한 지정
+  - 안쪽 여백 20px
+  - 배경색 : dimgray
+  - 사각형 모서리 라운드 주기 : 8px
+  - 최대 전체 너비 : 600px
+  - 외부 여백 : 40px
+  - 그림자 효과 : 
+*/
+
+.container {
+  padding: 20px;
+  background-color: dimgray;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 40px;
+
+  /* 그림자 효과 : 현재 div 태그의 box를 기준으로
+    - 첫번째 값 : 그림자 수평이동(양수값은 오른쪽, 음수값은 왼쪽으로 이동)
+    - 두번째 값 : 그림자 수직이동(양수값은 아래쪽, 음수값은 위쪽으로 이동)
+    - 세번째 값 : 번짐 정도(값이 클수록 번짐이 넓어지면서 흐려짐)
+    - 네번째 값 : 그림자 색상 
+  */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
